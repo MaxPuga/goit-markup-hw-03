@@ -24,6 +24,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 /* ===== Header ===== */
 
 .page-header {
@@ -49,10 +53,9 @@ p {
 .logo-header {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: #4d5ae5;
   font-weight: 700;
-  font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -126,43 +129,47 @@ ol {
 /* ===== Hero ===== */
 
 .hero-board {
-  text-align: center;
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
-  margin: 0 auto;
-  padding-top: 188px;
 }
 
 .hero-button {
-  background-color: #4d5ae5;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
-  color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   font-family: "Roboto", sans-serif;
-  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: #fff;
   cursor: pointer;
-  margin-top: 48px;
-  margin-bottom: 188px;
+  border: none;
 }
 
-.hero-button:hover {
-  background-color: #404bbf;
-}
-
+.hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
@@ -215,7 +222,7 @@ ol {
   background-color: #ffffff;
 }
 
-.benefits-feature {
+.benefits-item {
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -257,8 +264,12 @@ ol {
 }
 
 .portfolio {
-  padding-top: 120px;
   padding-bottom: 72px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantage {
@@ -285,14 +296,6 @@ ol {
 /* ===== Footer ===== */
 
 .logo-footer {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .logo-accent-footer {
@@ -300,7 +303,8 @@ ol {
 }
 
 .footer {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 
@@ -310,6 +314,9 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
   margin-top: 16px;
+}
+
+.site-footer {
+  max-width: 264px;
 }
