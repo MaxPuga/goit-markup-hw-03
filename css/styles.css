@@ -180,6 +180,19 @@ ol {
   padding-bottom: 72px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .benefits-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -248,6 +261,23 @@ ol {
   padding-bottom: 72px;
 }
 
+.advantage {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  row-gap: 48px;
+}
+
 .background {
   background-color: #ffffff;
 }
@@ -270,6 +300,7 @@ ol {
 }
 
 .footer {
+  padding: 100px;
   background-color: #2e2f42;
 }
 
@@ -279,4 +310,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
